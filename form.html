@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        #form{
+            background-color: aliceblue;
+            margin-left: auto;
+            margin-right: auto;
+            width: 450px;
+            padding: 24px;
+            font-size: 1.2rem;
+        }
+        .input-lebel{
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2px ;
+            margin-top: 6px;
+        }
+        .input-item{      
+            width: 100%;
+            height: 24px;
+        }
+        #checkbox{
+            padding-top: 14px;
+            padding-bottom: 50px;
+        }
+        #button{
+            padding: 5px;
+            margin-top:10px ;
+            margin-right: 10px;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Sign Up</h1>
+    <form action="Sign Up" id="form" method="post">
+        <div>
+            <p class="input-lebel">Full Name:</p>
+            <input class="input-item" type="text" name="Name" placeholder="Full Name" autofocus required>
+        </div>
+        <div>
+           <p class="input-lebel"> Image: </p> 
+           <input class="input-item" type="file" name="Image" placeholder="DP of You" required>
+        </div>
+        <div>
+            <p class="input-lebel">Birthdate:</p>
+            <input class="input-item" type="date" name="date" max="2002-12-31" placeholder="Birth Day" required>
+        </div>
+        <div>
+            <p class="input-lebel">Age:</p>
+            <input class="input-item" type="number" name="age" min="18" placeholder="age" required>
+        </div>
+        <div>
+            <p class="input-lebel">Who are you?:</p>
+            <input class="input-item" list="profession" name="profession" placeholder="Profession" required>
+            <datalist id="profession">
+                <option value="Student">
+                <option value="Engineer">
+                <option value="Doctor">
+                <option value="Poet">
+                <option value="Freelancer">
+                <option value="Businessman">
+            </datalist>
+            
+        </div>
+        <div>
+            <p class="input-lebel">Email:</p>
+            <input class="input-item" type="email" name="email" required maxlength="30" placeholder="Enter valid Email">
+        </div>
+        <div>
+            <p class="input-lebel">Password:</p>
+            <input class="input-item" type="password" name="password" placeholder="Set Password" required minlength="8">
+        </div>
+        <div>
+            <p class="input-lebel">Confirm Password:</p>
+            <input class="input-item" type="password" name="confirm password" placeholder="Re-enter the password" required minlength="8">
+        </div>
+        <div>
+            <p class="input-lebel">Gender:</p>
+            <input type="radio" name="Gender" value="Male" Group="Gender"> Male
+            <input type="radio" name="Gender" value="Female" group="Gender"> Female
+            <input type="radio" name="Gender" value="Other" group="Gender"> Other
+        </div>
+        <div>
+            <p class="input-lebel">Sequrity Question:</p>
+            <select class="input-item" name="option" id="">
+                <option value="What is your pet's name?">What ios your pet's name?</option>
+                <option value="What is your pet name?">What ios your pet name?</option>
+                <option value="What is your birth city?">What is your birth city</option>
+            </select>
+        </div>
+        <div>    
+            <textarea name="answer" id="answer" rows="3" cols="58" placeholder="Type your answer here."></textarea>
+        </div>
+        <div>
+            <input id="checkbox" type="checkbox" name="ckeckbox" value="conditions-check"> I agree all the terms and conditions.
+        </div>
+        <div>
+            <input id="button" type="submit" value="Sign Up">
+            <input id="button" type="reset" value="Reset"> 
+        </div>
+    </form>
+</body>
+</html>

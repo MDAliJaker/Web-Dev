@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(111, 202, 128);
+}
+#margin{
+    margin: 24PX;
+    border: 1px solid blue;
+    margin: 24px 30px 30px 100px;
+}
+#padding{
+    border: 1px solid red;
+    padding:24px;
+}
+#ol{
+    list-style-type: lower-greek;
+    font-size: 30px;
+}
+#ul{
+    list-style: none;
+    font-size: 30px;
+}
+#bt-gotit{
+    margin-left: auto;
+    margin-right:auto ;
+    background-color: aqua;
+    border: none;
+    font-size: 25px;
+    padding: 10px;
+    color: rgb(253, 253, 253);
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+}
+#bt-gotit:hover{
+    background-color: royalblue;
+    color: green;
+
+}
+
+#bt-tellmore{
+    margin-left: auto;
+    margin-right:auto ;
+    background-color: aqua;
+    border: none;
+    font-size: 25px;
+    padding: 10px;
+    color: rgb(253, 253, 253);
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+}
